@@ -7,6 +7,5 @@ The result of working my way through this book.
 
 * [Authors Github](https://github.com/PacktPublishing/Hands-On-Unity-2022-Game-Development-Third-Edition)
 * [Packt Page](https://www.packtpub.com/product/hands-on-unity-2022-game-development-third-edition/9781803236919)
-* [Amazon Page]jhttps://www.amazon.com/gp/product/B0B4K5W1HY)
-
+* [Amazon Page](https://www.amazon.com/gp/product/B0B4K5W1HY)
 
