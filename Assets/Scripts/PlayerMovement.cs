@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,11 +15,15 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 movementValue;
     private float lookValue;
 
+    private Rigidbody rigidbody;
+
 
     private void Awake()
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+
+        rigidbody = GetComponent<Rigidbody>();
     }
 
 
@@ -34,14 +39,13 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-    // Update is called once per frame
     void Update()
     {
-        transform.Translate(
+        rigidbody.AddRelativeForce(
             movementValue.x * Time.deltaTime,
             0,
             movementValue.y * Time.deltaTime);
 
-        transform.Rotate(0, lookValue * Time.deltaTime, 0);
+        rigidbody.AddRelativeTorque(0, lookValue * Time.deltaTime, 0);
     }
 }
